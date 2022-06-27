@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.femass.controller.Cadastro_ProdutoController">
+    <children>
+        <Pane minHeight="356.0" minWidth="225.0" prefHeight="356.0" prefWidth="225.0">
+            <children>
+                <ListView fx:id="ListaProdutos" layoutX="7.0" layoutY="22.0" onKeyPressed="#LstProdutos_KeyPressed" onMouseClicked="#LstProdutos_MouseClicked" prefHeight="287.0" prefWidth="166.0" />
+                <Button fx:id="BtnExcluir" layoutX="18.0" layoutY="320.0" mnemonicParsing="false" onAction="#BtnExcluir_Action" text="Excluir Produto" />
+                <Label layoutX="43.0" layoutY="6.0" text="Produtos a Venda" />
+            </children>
+        </Pane>
+        <Pane minHeight="356.0" minWidth="316.0" prefHeight="365.0" prefWidth="316.0">
+            <children>
+                <Button fx:id="BtnCancelar" disable="true" layoutX="183.0" layoutY="326.0" mnemonicParsing="false" onAction="#BtnCancelar_Action" prefHeight="25.0" prefWidth="111.0" text="Sair do Sistema" />
+                <Label layoutX="130.0" layoutY="6.0" text="Saldo do Caixa:" />
+                <Label layoutX="144.0" layoutY="23.0" prefHeight="17.0" prefWidth="53.0" text="R$ 0,00" />
+            <Button fx:id="BtnExcluir1" layoutX="116.0" layoutY="52.0" mnemonicParsing="false" onAction="#BtnExcluir_Action" text="Comprar Produto" />
+            </children>
+        </Pane>
+    </children>
+</HBox>
